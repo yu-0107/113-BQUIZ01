@@ -3,11 +3,7 @@
 <form action="api/insert_title.php" method="post" enctype="multipart/form-data">
     <table>
         <tr>
-            <td>標題區圖片：</td>
-            <td><input type="file" name="img" id="img"></td>
-        </tr>
-        <tr>
-            <td>標題區替代文字：</td>
+            <td>動態文字廣告：</td>
             <td><input type="text" name="text" id="text"></td>
         </tr>
     </table>
