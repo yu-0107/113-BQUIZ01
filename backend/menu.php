@@ -18,7 +18,7 @@
                 <tbody>
                     <tr class="yel">
                         <td width="30%">主選單名稱</td>
-                        <td width="30%">選單連結網址</td>
+                        <td width="30%">選單連結網址：</td>
                         <td width="10%">次選單數</td>
                         <td width="10%">顯示</td>
                         <td width="10%">刪除</td>
@@ -45,7 +45,8 @@
                             <input type="checkbox" name="del[]" value="<?=$row['id'];?>">
                         </td>
                         <td>
-                            <input type="button" value="編輯次選單">
+                            <input type="button" value="編輯次選單"
+                                onclick="op(&#39;#cover&#39;,&#39;#cvr&#39;,&#39;./modal/submenu.php?id=<?=$row['id'];?>&#39;)">
                         </td>
                         <input type="hidden" name="id[]" value="<?=$row['id'];?>">
                     </tr>
