@@ -1,4 +1,4 @@
-﻿﻿<?php include_once "api/db.php";?>
+﻿﻿﻿<?php include_once "api/db.php";?>
 <!DOCTYPE html
     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!-- saved from url=(0068)?do=admin&redo=title -->
@@ -13,12 +13,14 @@
     <script src="./js/js.js"></script>
 </head>
 
-<body>
+<body>`
     <div id="cover" style="display:none; ">
         <div id="coverr">
             <a style="position:absolute; right:3px; top:4px; cursor:pointer; z-index:9999;"
                 onclick="cl(&#39;#cover&#39;)">X</a>
-            <div id="cvr" style="position:absolute; width:99%; height:100%; margin:auto; z-index:9898;"></div>
+            <div id="cvr" style="position:absolute; width:99%; height:100%; margin:auto; z-index:9898;">
+
+            </div>
         </div>
     </div>
     <iframe style="display:none;" name="back" id="back"></iframe>
@@ -48,7 +50,8 @@
                         <div class="mainmu">
                             校園映象資料管理 </div>
                     </a>
-                    <a style="color:#000; font-size:13px; text-decoration:none;" href="?do=total">
+                    <a style="color:#000; font-size:13px; text-decoration:none;" href="#"
+                        onclick="op('#cover','#cvr','./modal/view.php')">
                         <div class="mainmu">
                             進站總人數管理 </div>
                     </a>
